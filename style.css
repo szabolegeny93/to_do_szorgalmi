@@ -1,31 +1,81 @@
 *{
     font-family: 'Yantramanav', sans-serif;
-    
+    box-sizing: border-box;
 }
 body{
     background-color: mediumturquoise;
 }
-header, .addToDoContainer{
-    width:50%;
+main{
+    width:30%;
     margin-left: auto;
     margin-right: auto;
-    border:1px solid white;
-    background-color: grey;
+    background-color: rgba(238, 230, 230, 0.89);
 }
+header{
+    width: 100%;
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-top: 0;
+    margin-bottom: 0;
+    border:1px solid black;
+    
+}
+
+/*input part*/
 .addToDoContainer{
-    padding: 5px 5px 5px 5px;
+    width: 70%;
+    margin-left: inherit;
+    margin-right: inherit;
+    /*padding: 5px 5px 5px 5px;*/
     position:relative;
+    align-items: center;
+    border: inherit;
 }
 h1{
     text-transform: uppercase;
     text-align: center;
 }
 .addToDoContainer input{
-    width: 320px;
+    width:max-content;
+    /*width: (addToDoContainer.width-#addButton.width);*/
 }
 .addToDoContainer #addButton{
     background-color: magenta;
     padding: 2px 2px 2px 2px;
     position: absolute;
-    right: 5px;
+    right: 0px;
+}
+
+ul li{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2;
+    list-style-type: none;
+    background-color:inherit;
+    position: relative;
+    border: 1px solid black;
+    
+}
+li:hover{
+    background-color: lightyellow;
+}
+/*list icons, buttons*/
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+.deleteIcon{
+    position: absolute;
+    right:30px;
+}
+
+.tickIcon{
+    position: absolute;
+    right: 0px;
+}
+
+li >.tickIcon:hover{
+    background-color: magenta;    
 }
