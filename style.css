@@ -1,0 +1,31 @@
+*{
+    font-family: 'Yantramanav', sans-serif;
+    
+}
+body{
+    background-color: mediumturquoise;
+}
+header, .addToDoContainer{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid white;
+    background-color: grey;
+}
+.addToDoContainer{
+    padding: 5px 5px 5px 5px;
+    position:relative;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+}
+.addToDoContainer input{
+    width: 320px;
+}
+.addToDoContainer #addButton{
+    background-color: magenta;
+    padding: 2px 2px 2px 2px;
+    position: absolute;
+    right: 5px;
+}
