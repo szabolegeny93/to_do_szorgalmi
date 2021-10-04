@@ -50,32 +50,52 @@ ul li{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    line-height: 2;
+    line-height: 2.5;
     list-style-type: none;
     background-color:inherit;
     position: relative;
     border: 1px solid black;
+    vertical-align: middle;
     
 }
 li:hover{
     background-color: lightyellow;
 }
+span 
 /*list icons, buttons*/
 .icon{
     width: 25px;
     height: 25px;
+    border-radius: 50%;
+    padding: 3px 3px 3px 3px;
 }
 
 .deleteIcon{
     position: absolute;
     right:30px;
+    top: 7px;   /*Meg kell vizsgálni, hogy hány px 1 sor magassága, annak megfelelően kell középre pozícionálni*/
+    vertical-align: middle;
+    width: 25px;
+    height:25px;
+    
+}
+
+.deleteIcon:hover{
+    background-color: magenta;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 2px 2px 2px 2px;
 }
 
 .tickIcon{
     position: absolute;
     right: 0px;
+    top: 2px;   /*Meg kell vizsgálni, hogy hány px 1 sor magassága, annak megfelelően kell középre pozícionálni*/
+    width: 25px;
+    height:25px;
+    
 }
 
-li >.tickIcon:hover{
+.tickIcon:hover{
     background-color: magenta;    
 }
