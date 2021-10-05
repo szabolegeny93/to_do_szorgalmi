@@ -4,7 +4,7 @@ function addToDo() {
         alert("Please write the task in the textfield")
     }else{
         //hozzáadás a listához
-        $("#toDoList").prepend($('<li>' + toDo + '<span class="deleteIcon"><img src="./icons/delete.svg" class="icon" /></span><span class="tickIcon"><img src="./icons/tick.svg" class="icon" /></span></li>').on("click", function () {
+        $("#toDoList").prepend($('<li>' + toDo + '<span class="icon deleteIcon"><img src="./icons/delete.svg" /></span><span class="icon tickIcon tickIcon-ticked"><img src="./icons/tick.svg" /></span></li>').on("click", function () {
             $(this).toggleClass("checked");
           }));
     };
@@ -21,7 +21,7 @@ $(document).ready(function () {
         addToDo();
     });
     $("#toDoList").on('click', '.deleteIcon', function (event) {
-        $(event.target).parent().remove();
+        $(event.target).parent().remove(); /*Csak a span-t törli, az adott sort nem.     parent().parent().remove() törli az egész ul-t*/
     });
     $("#toDoList").on('click', 'tickIcon', function (event) {
         $(event.target).parent().css('text-decoration', 'bold');
